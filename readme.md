@@ -12,12 +12,12 @@ Utilizing NVIDIA's train.py model, the program must first train itself to identi
 
 1. Please have a Jetson Nano 2GB (and all of its included materials: e.g. USB power cable, etc.) that is connected to the internet.
 2. Also be sure to have Resnet-18 and GoogleNet installed on your nano.
-3. Please be sure to download imageNet from the jetson.inference library, loadImage from the jetson.utils library, as well as the argparse library, as the algorithm depends on these to run.
-4. Additionally, please be sure to download the train.py model from the jetson-inference reposititory.lease also save this dataset compiled Kaggle in order to train the program: https://www.kaggle.com/datasets/akbotayelemessova/scoliosis-back-images-yes
+3. Please be sure to download imageNet from the jetson-inference library, loadImage from the jetson.utils library, the argparse library, as well as the onnx_export.py program from the jetson-inference library, as the algorithm depends on these to run.
+5. Additionally, please be sure to download the train.py model from the jetson-inference reposititory.lease also save this dataset compiled Kaggle in order to train the program: https://www.kaggle.com/datasets/akbotayelemessova/scoliosis-back-images-yes
 
-## Directions
+## Directions for Running
 
-1. Please download the dataset from Kaggle on your nano
+1. Please download the dataset from Kaggle onto your nano
 2. Then, runzip the file that was just downloaded.
 3. Now, it's time to training the program using the train.py training script. (This process can take a very long time, but the long it runs, the more accurate the model should be.)
 4. In order to run the re-trained model, please convert it into ONNX format using the onnx export script. (The model should be saved as resent18.onnx)
